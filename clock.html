@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page principale</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+        .clock {
+            width: 50%;
+            height: 100%;
+        }
+        .right-column {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .liens, .meteo, .password {
+            width: 100%;
+            height: 33.33%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clock">
+            <iframe src="clock.html"></iframe>
+        </div>
+        <div class="right-column">
+            <div class="liens">
+                <iframe src="liens.html"></iframe>
+            </div>
+            <div class="meteo">
+                <iframe src="meteo.html"></iframe>
+            </div>
+            <div class="password">
+                <iframe src="password.html"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
