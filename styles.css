@@ -26,8 +26,8 @@ body, html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 33vw;
-    max-height: 37vh;
+    max-width: 100%;
+    max-height: auto;
     overflow: hidden;
     border: none;
     box-shadow: none;
@@ -130,33 +130,38 @@ h2 {
 
 @media (max-width: 768px) {
     .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
+        display: flex;
+        flex-direction: column;
         gap: 10px;
         padding: 10px;
         height: auto;
-        background: url('./assets/img/background.jpg') no-repeat center center fixed;
-        background-size: cover;
     }
+    
     .box {
-        max-width: 80%;
-        max-height: 80%;
+        max-width: 100%;
+        max-height: auto;
         padding: 10px;
+        margin-bottom: 10px;
     }
+    
     h2 {
         font-size: 20px;
     }
+    
     .heures, .date, .message {
         font-size: 26px; 
     }
+    
     .submit, button {
         font-size: 14px;
         padding: 8px;
     }
+    
     .input {
         font-size: 13px;
         padding: 8px;
     }
+    
     .input-field {
         margin-bottom: 10px;
     }
@@ -164,23 +169,38 @@ h2 {
 
 @media (max-width: 480px) {
     .container {
-        background: url('./assets/img/background.jpg') no-repeat center center fixed;
-        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        height: auto;
     }
+    
+    .box {
+        max-width: 100%;
+        max-height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
     h2 {
         font-size: 18px;
     }
+    
     .heures, .date, .message {
         font-size: 22px; 
     }
+    
     .submit, button {
         font-size: 12px;
         padding: 6px;
     }
+    
     .input {
         font-size: 12px;
         padding: 6px;
     }
+    
     .input-field {
         margin-bottom: 8px;
     }
@@ -188,45 +208,43 @@ h2 {
 
 @media (max-width: 300px) {
     .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
+        display: flex;
+        flex-direction: column;
         gap: 5px;
         padding: 5px;
         height: auto;
-        background: url('./assets/img/background.jpg') no-repeat center center fixed;
-        background-size: cover;
     }
+    
     .box {
-        max-width: 80%;
-        max-height: 80%;
+        max-width: 100%;
+        max-height: auto;
         padding: 5px;
+        margin-bottom: 5px;
     }
+    
     h2 {
         font-size: 16px;
         padding-bottom: 5px;
         margin-bottom: 10px;
         width: 90%;
     }
+    
     .heures, .date, .message {
         font-size: 20px; 
         margin-bottom: 5px;
     }
+    
     .submit, button {
         font-size: 10px;
         padding: 4px;
     }
+    
     .input {
         font-size: 10px;
         padding: 4px;
     }
+    
     .input-field {
         margin-bottom: 5px;
     }
 }
-
-.submit {
-    font-size: 12px;
-    padding: 6px;
-    width: auto;
-}
-
