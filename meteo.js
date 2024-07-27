@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = '8688544598a94e46832192606241907'; // Replace with your WeatherAPI key
+    const apiKey = '8688544598a94e46832192606241907'; 
     const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=valencia-spain&aqi=no`;
 
     const result = document.getElementById('result');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(data => {
                 console.log(data);
                 const { location, current } = data;
-                const iconUrl = `https:${current.condition.icon}`; // Add `https:` to the icon URL
+                const iconUrl = `https:${current.condition.icon}`; 
                 
                 result.innerHTML = `
                     <img src="${iconUrl}" alt="${current.condition.text}">
