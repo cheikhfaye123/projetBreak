@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = '8688544598a94e46832192606241907'; // Replace with your WeatherAPI key
+    const apiKey = 'd11dc42bf9ce4450829152755242707'; 
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=valencia-spain&aqi=no`;
 
     const result = document.getElementById('result');
