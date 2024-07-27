@@ -18,7 +18,7 @@ body, html {
 }
 
 .box {
-    background-color: rgba(46, 155, 206, 0.01);
+    background-color: rgba(46, 155, 206, 0.001);
     border-radius: 12px;
     padding: 20px;
     display: flex;
