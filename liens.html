@@ -1,54 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Page principale</title>
+    <link rel="stylesheet" href="./liens.css">
+    <title>Formulaire de saisie</title>
 </head>
 <body>
+    <div class="box">
     <div class="container">
-        <div class="box clock">
-            <h2>Horloge</h2>
-            <div class="heures"></div>
-            <div class="date"></div>
-            <div class="message"></div>
+        <div class="top-header">
         </div>
-        <div class="box meteo">
-            <h2>Météo</h2>
-            <div id="result">Chargement de la météo...</div>
+        <div class="input-field">
+            <input type="text" class="input" placeholder="nombre de tu enlace" id="nameLink"> 
         </div>
-        <div class="box password">
-            <h2>Générateur de mot de passe</h2>
-            <div class="afficheur">
-                <label>Mot de passe généré</label>
-                <input type="text" id="password" readonly>
-            </div>
-            <div class="appuyer">
-                <button type="button" onclick="genererMotDePasse()">Générer</button>
-            </div>
-        </div>
-        <div class="box liens">
-            <h2>Liens</h2>
-            <div class="input-field">
-                <input type="text" class="input" placeholder="Nom du lien" id="nameLink">
-            </div>
-            <div class="input-field">
-                <input type="text" class="input" placeholder="URL du lien" id="link" required>
-            </div>
-            <div class="input-field">
-                <input type="submit" class="submit" value="Ajouter le lien" id="btn1" required>
-            </div>
-            <div class="resultats">
-                <div id="resultat"></div>
-            </div>
+        <div class="input-field">
+            <input type="text" class="input" placeholder="pega aqui tu URL" id="link" required> 
         </div>
     </div>
+    <div class="input-field">
+        <input type="submit" class="submit" value="agregar enlace" id="btn1" required> 
+        
+    </div>
+    <div class="resultats">
+        <div id="resultat">
+            
+        </div>
+    </div>
+    </div>
 
-    <script src="./clock.js"></script>
+
     <script src="./liens.js"></script>
-    <script src="./meteo.js"></script>
-    <script src="./password.js"></script>
 </body>
 </html>
